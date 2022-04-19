@@ -1,0 +1,28 @@
+cabal-version: 2.0
+name:                piano-taffybar
+version:             0.1.0.0
+-- synopsis:
+-- description:
+-- bug-reports:
+-- license:
+license-file:        LICENSE
+author:              Jesse Weaver
+maintainer:          jesse.weaver@grafana.com
+-- copyright:
+-- category:
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+executable piano-taffybar
+  main-is:             Main.hs
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base
+                     , containers
+                     , directory
+                     , filepath
+                     , gtk3
+                     , taffybar
+                     , X11>=1.8
+  -- hs-source-dirs:
+  default-language:    Haskell2010
