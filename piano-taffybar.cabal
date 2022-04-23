@@ -15,14 +15,19 @@ extra-source-files:  CHANGELOG.md
 
 executable piano-taffybar
   main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  ghc-prof-options:    -fprof-auto
   -- other-modules:
   -- other-extensions:
   build-depends:       base
                      , containers
                      , directory
                      , filepath
+                     , gi-gtk ^>= 3.0.36
                      , gtk3
                      , taffybar
                      , X11>=1.8
+                     , hslogger ^>= 1.3.1.0
+                     , text ^>= 1.2.4.0
   -- hs-source-dirs:
   default-language:    Haskell2010

@@ -1,0 +1,26 @@
+.taffy-window * {
+	/*
+		This removes any existing styling from UI elements. Taffybar will not
+		cohere with your gtk theme.
+	*/
+	all: unset;
+
+	font-family: "Aller", sans-serif;
+	font-size: 10pt;
+	color: @font-color;
+}
+
+.analog-clock label {
+	border: 1px solid #AAA;
+	border-radius: 12px;
+	font-family: "Clocko";
+	font-size: 24px;
+}
+
+.inner-pad {
+	padding: 0 10px;
+}
+
+.graph label {
+	margin-right: 5px;
+}
